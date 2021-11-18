@@ -325,6 +325,85 @@ span.lev4-menu-link {
     opacity: 1;
 }
 
+#footer {
+    background: #2a3b4d;
+    color: rgba(255,255,255,.5);
+    padding-top: 30px;
+    padding-bottom: 10px;
+    margin-top: 2rem;
+    color: rgba(255 255 255 / 60%);
+    line-height: 1.9;
+}
+
+#footer ul,
+#footer li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#footer .site-w > div + div {
+    margin-top: 1rem
+}
+
+.f_showroom {
+    padding-right: 2rem;
+}
+
+.f_info {
+    min-width: 310px;
+    padding: 0 1rem;
+}
+
+.f_info:last-child {
+    padding-right: 0;
+}
+
+#footer a {
+    color: rgba(255 255 255 / 80%);
+}
+#footer a:hover {
+    color: rgba(255 255 255 / 100%);
+    text-decoration: underline;
+}
+
+#footer .f_top {
+	padding-top:10px;
+	margin-bottom:10px;
+	border-bottom:1px solid rgba(255 255 255 / 10%);
+}
+#footer .f_top_name {
+	margin:0;
+	line-height:32px;
+	font-size: 16px;
+	font-weight: normal;
+
+    text-transform: uppercase;
+}
+
+.site-map {
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255 255 255 / 10%);
+    font-size: 13px;
+}
+
+.menufooter {
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+}
+.menufooter a {
+    margin-left: 4px;
+}
+
+.footer-social a {
+    margin-right: 6px;
+}
+
+.footer-social img {
+    width: 32px;
+    height: 32px;
+}
 @media (max-width: 780px) {
     body {
         background-color: #f8f8f8
@@ -650,6 +729,39 @@ span.lev4-menu-link {
         border-radius: 3px;
         background-color: var(--white);
         margin: 3px 0;
+    }
+
+
+    #footer .site-w {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #footer .site-w > div:first-child,
+    #footer .site-w > div:nth-of-type(2) {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .f_showroom {
+        padding: 0 1rem
+    }
+
+    #footer .site-w > div:nth-of-type(2) {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .site-map {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hot-products-wrapper {
+        background-color: #fff;
+        padding: 1rem 0
     }
 }
 

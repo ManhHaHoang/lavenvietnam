@@ -228,3 +228,12 @@
         height: 18px;
     }
 }
+
+@media (min-width: 1024px) {
+    .slick-prev {
+        left: -25px;
+    }
+    .slick-next {
+        right: -25px;
+    }
+}
