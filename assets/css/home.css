@@ -262,6 +262,76 @@
     .is-home .site-main {
         padding-top: 76px;
     }
+
+
+    /* list category */
+    .category-warp {
+        margin-bottom: 10px;
+        background-color: #fff;
+        padding: 15px 0 0;
+        box-shadow: 0 0 3px rgba(11,11%,11%,10%);
+    }
+
+    .category-group {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0 10px 5px;
+        color: #333;
+    }
+
+    .category-group h2 {
+        padding: 4px 6px;
+        font-size: calc(17px + (19 - 17) * ((100vw - 300px) / (1920 - 320)));
+        display: block;
+        font-weight: normal;
+    }
+
+    .list-home-categories {
+        width: 100%;
+        overflow-x: auto;
+        overflow-y: hidden;
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 10px;
+        padding-bottom: 8px;
+    }
+
+    .show-category-home-item {
+        width: 120px;
+        min-width: 120px;
+        margin-right: 10px;
+    }
+
+    .category-warpper {
+        color: #313131;
+        text-align: center;
+        font-size: 13px;
+        position: relative;
+        width: 100%;
+    }
+
+    .category-icon {
+        color: #0077b7;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .category-name {
+        font-size: 12px;
+        text-align: center;
+        color: #555;
+        min-height: 32px;
+    }
+
+    .category-img {
+        object-fit: contain;
+        width: 100%;
+        height: 120px;
+    }
 }
 
 @media (min-width: 768px) {
@@ -343,16 +413,24 @@
     }
 
     .is-home .main-menu {
-        margin-top: var(--size);
         display: block;
         position: absolute;
+        padding-top: 15px;
         top: 100%;
-        left: var(--size);
-        background-color: var(--white);
+        left: 0;
         min-height: 365px;
         width: 250px;
-        border: 1px solid var(--flash);
+
+    }
+
+    .main-menu-list {
+        background-color: var(--white);
         border-top: none;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        position: relative;
+        box-shadow: 0 3px 4px -1px rgb(0 0 0 / 8%), 0 2px 4px 0px rgb(0 0 0 / 6%), 0 1px 6px 0px rgb(0 0 0 / 6%)
     }
 
     .flashsale-banner {

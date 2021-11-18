@@ -19,14 +19,41 @@ $(document).ready(function() {
         $('body').addClass('open-menu');
     })
 
-    $('.navigation-background').click(function () {
+    $('.navigation-background-mobile').click(function () {
         $('body').removeClass('open-menu');
+        $('.main-menu').removeClass('open-lev3-menu');
+    })
+
+    if ($(window).width() > 1024) {
+        $('.navigation').hover(function () {
+            $('.navigation-background').addClass('init-background');
+        }, function () {
+            $('.navigation-background').removeClass('init-background')
+        }, 300);
+
+        $('.category-menu-item').hover(function () {
+            $(this).find('.lev3-menu-box').show()
+        }, function () {
+            $(this).find('.lev3-menu-box').hide()
+        }, 300);
+
+        $('.navigation').hover(function () {
+            $(this).find$('.lev4-menu-box').show()
+        }, function () {
+            $(this).find('.lev4-menu-box').hide()
+        }, 300);
+    } else {
+
+    }
+
+    $('.back-to-menu').click( function () {
+        $(this).parents('.main-menu').removeClass('open-lev3-menu');
+        $(this).parents('.has-lev3-menu').removeClass('lev3-menu-active');
     })
 
     $('.goto-lev3-menu').click( function() {
         $(this).parents('.main-menu').addClass('open-lev3-menu');
         $(this).parents('.has-lev3-menu').addClass('lev3-menu-active');
-
     })
 
     if (screen.width > 1100) {

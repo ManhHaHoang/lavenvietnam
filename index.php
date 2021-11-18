@@ -4,6 +4,7 @@
     <?php include 'common/home/banner.php' ?>
     <?php include 'common/home/categories.php' ?>
     <?php include 'common/home/flashsale.php' ?>
+    <?php include 'common/home/list-category.php' ?>
     <?php include 'common/home/tab-product.php' ?>
 </main>
 <?php include 'layout/footer.php';?>

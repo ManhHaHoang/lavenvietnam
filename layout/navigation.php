@@ -18,8 +18,10 @@
                     <img height="20" src="/images/logo.png" alt="<?= $sitename ?>">
                     <img width="10" height="10" src="/images/down.svg" alt="<?= $sitename ?>">
                 </a>
-                <?php include 'common/menu.php' ?>
-                <div class="navigation-background"></div>
+                <div class="main-menu">
+                    <?php include 'common/menu.php' ?>
+                    <div class="navigation-background-mobile"></div>
+                </div>
             </nav>
             <div class="main-bar-other flex-b align-s flex-s">
                 <form class="main-seach-form flex-b align-c" action="/search/" method="post">
@@ -106,5 +108,6 @@
                 </div>
             </div>
         </div>
+        <div class="navigation-background"></div>
     </div>
 </div>

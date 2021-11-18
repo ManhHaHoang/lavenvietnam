@@ -154,8 +154,6 @@ img {
     max-width: 100%;
     object-fit: contain;
     border: none;
-    display: block;
-    margin: 0 auto;
 }
 
 .button {
