@@ -6,7 +6,7 @@
                 <?php for ($i=1; $i < 4; $i++) { ?>
                     <div class="main-banner-item">
                         <a href="#">
-                            <img src="/images/banner/1.png" alt="">
+                            <img src="/images/banner/<?=$i?>.png" alt="">
                         </a>
                     </div>
                 <?php } ?>

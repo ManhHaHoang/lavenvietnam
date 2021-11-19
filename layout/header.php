@@ -13,35 +13,7 @@
                     <li class="menu-faq"><a rel="nofollow" href="/hoi-dap">FAQ</a></li>
                     <li class="menu-faq"> <a rel="nofollow" href="/dang-ky">Đăng ký</a> </li>
                     <li id="QuickLogin">
-                        <a rel="nofollow" href="javascript:void(0);">Đăng nhập</a>
-                        <div id="login-chiaki" class="row" style="display: none;">
-                            <div class="col-xs-12 quick-login">
-                                Đăng nhập bằng
-                                <div class="social-buttons"> <a rel="nofollow" href="/facebook-login" class="btn btn-fb">Facebook</a> <a rel="nofollow" href="/google-login" class="btn btn-google">Google</a> </div>
-                                <p>hoặc</p>
-                                <form class="form" role="login" method="post" action="/dang-nhap" accept-charset="UTF-8" id="login-nav" data-toggle="validator" novalidate="true">
-                                    <div class="form-group">
-                                        <label class="sr-only" for="exampleInputEmail2">Email</label> <input name="email" type="email" class="form-control" id="inputEmail" placeholder="Email" required="" data-error="Email bạn nhập chưa đúng!">
-                                        <div class="help-block with-errors"></div>
-                                        <div class="clearfix"></div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="sr-only" for="exampleInputPassword2">Password</label> <input type="password" name="password" class="form-control" id="inputPassword3" placeholder="Mật khẩu" data-minlength="6" data-error="Chưa nhập mật khẩu" required=""> <span class="help-block with-errors"></span>
-                                        <div class="clearfix"></div>
-                                        <div class="help-block text-right"><a id="RecoverPass" class="linkcolor" href="javascript:void(0);">Quên mật khẩu?</a></div>
-                                    </div>
-                                    <div class="form-group"> <button type="submit" class="btn btn-primary btn-block">Đăng nhập</button> </div>
-                                </form>
-                            </div>
-                            <div class="col-xs-12 forget-pass">
-                                <p>Bạn hãy nhập email để chúng tôi gửi mật khẩu cho bạn</p>
-                                <form class="form" method="post" role="recoverpassword" action="/mat-khau">
-                                    <div class="form-group"> <label class="sr-only" for="exampleInputEmail2">Email</label> <input type="email" name="email" class="form-control" id="forgotpass" placeholder="Nhập Email của bạn" required=""> <button type="submit" class="btn btn-primary">Gửi</button> </div>
-                                    <div class="form-group"> <a rel="nofollow" href="javascript:void(0);" class="btn btn-sus quick-log">Đăng nhập</a> </div>
-                                </form>
-                            </div>
-                            <div class="bottom text-center"> Chưa có tài khoản? Đăng ký <a rel="nofollow" class="linkcolor" href="/dang-ky">Tại đây</a> </div>
-                        </div>
+                        <a rel="nofollow" href="/dang-nhap">Đăng nhập</a>
                     </li>
                 </ul>
             </nav>

@@ -19,6 +19,14 @@ $(document).ready(function() {
         $('body').addClass('open-menu');
     })
 
+    $('.user-area').click(function () {
+        $('body').addClass('open-user');
+    })
+
+    $('.closecart, .login-background-mobile').click(function () {
+        $('body').removeClass('open-user');
+    })
+
     $('.navigation-background-mobile').click(function () {
         $('body').removeClass('open-menu');
         $('.main-menu').removeClass('open-lev3-menu');
@@ -60,6 +68,66 @@ $(document).ready(function() {
         var heightMenu = $('.main-menu').height();
         $('.banner-wrapper').css('height', heightMenu);
     }
+
+
+    $(document).mouseup(function(e) {
+        var segment = $('.segment-order-tracking');
+        if (!segment.is(e.target) && segment.has(e.target).length === 0) {
+            $('#form-search-order').hide();
+        } else {
+            $('#form-search-order').show();
+        }
+    });
+
+    $('#hide-segment').click (function () {
+        $('#form-search-order').hide()
+    })
+
+
+    $(document).mouseup(function(e) {
+        var searchSuggestion = $('#search-header');
+        if (!searchSuggestion.is(e.target) && searchSuggestion.has(e.target).length === 0) {
+            $('#popular-search-suggestion').hide();
+        } else {
+            $('#popular-search-suggestion').show();
+        }
+    });
+
+    $('#keyword').bind('keyup change',function(){
+        $('.search-loading').show();
+        setTimeout(function () {
+            $('.search-loading').hide();
+        }, 1000)
+
+        if(this.value.length > 3){
+            $('.keyword-member').hide();
+            $('.product-member').show();
+        }
+        else {
+            $('.keyword-member').show();
+            $('.product-member').hide();
+        }
+    });
+
+    if (screen.width < 960) {
+        $('.mini-cart-link').click(function () {
+            $('body').addClass('open-miniCart');
+        });
+
+        $('.closecart, .mini-cart-background').click(function () {
+            $('body').removeClass('open-miniCart');
+        });
+    } else {
+        $(document).mouseup(function(e) {
+            var miniCart = $('.mini-cart');
+            if (!miniCart.is(e.target) && miniCart.has(e.target).length === 0) {
+                $('.mini-cart-contain').hide();
+            } else {
+                $('.mini-cart-contain').show();
+            }
+        });
+    }
+
 
     $('.main-banner').slick({
         slidesToShow: 1,

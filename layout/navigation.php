@@ -29,53 +29,78 @@
                         <div class="box-shadow-search flex-b align-s">
                             <input type="text" id="keyword" autocomplete="off" class="txt-search form-control" placeholder="Tìm kiếm hàng nghìn Sản phẩm, Thương hiệu ...">
                             <input type="button" id="searchButton" value="Tìm kiếm" class="btn-search button">
+                            <span class="search-loading"></span>
                         </div>
                         <div class="hot-words-list">
-                            <a class="hot-words-item" target="_blank" href="https://chiaki.vn/vitamin-cho-be-c114">Vitamin cho bé</a>
-                            <a class="hot-words-item" target="_blank" href="https://chiaki.vn/tao-xoan-spirulina-nhat-ban-hop-2200-vien">Tảo Xoắn Spirulina</a>
-                            <a class="hot-words-item" target="_blank" href="https://chiaki.vn/blackmores/hang-san-xuat">Blackmores</a>
-                            <a class="hot-words-item" target="_blank" href="https://chiaki.vn/nuoc-hoa-hong-tri-mun-giam-nhon-obagi-clenziderm-md-pore-therapy">BHA Obagi</a>
-                            <a class="hot-words-item" target="_blank" href="https://chiaki.vn/collagen-c20">Collagen</a>
+                            <a class="hot-words-item" target="_blank" href="/#vitamin-cho-be-c114">Vitamin cho bé</a>
+                            <a class="hot-words-item" target="_blank" href="/#tao-xoan-spirulina-nhat-ban-hop-2200-vien">Tảo Xoắn Spirulina</a>
+                            <a class="hot-words-item" target="_blank" href="/#blackmores/hang-san-xuat">Blackmores</a>
+                            <a class="hot-words-item" target="_blank" href="/#nuoc-hoa-hong-tri-mun-giam-nhon-obagi-clenziderm-md-pore-therapy">BHA Obagi</a>
+                            <a class="hot-words-item" target="_blank" href="/#collagen-c20">Collagen</a>
                         </div>
                         <div id="popular-search-suggestion">
                             <div class="keyword-member">
                                 <h3 class="hotsearch-title">Từ khóa hot</h3>
-                                <div id="list-suggest-item" class="item-hot-keyword item">
-                                    <span class="suggest-item">collagen</span>
-                                    <span class="suggest-item">Ostelin</span>
-                                    <span class="suggest-item">Collagen</span>
-                                    <span class="suggest-item">đồng hồ</span>
-                                    <span class="suggest-item">Obagi</span>
-                                    <span class="suggest-item">Obagi Retinol</span>
-                                    <span class="suggest-item">fatzbaby</span>
-                                    <span class="suggest-item">vitamin</span>
-                                    <span class="suggest-item">máy massage cầm tay</span>
-                                    <span class="suggest-item">Elevit Bầu</span>
+                                <div id="list-suggest-item" class="item-hot-keyword flex-b align-c flex-w">
+                                    <a href="/#" class="suggest-item">collagen</a>
+                                    <a href="/#" class="suggest-item">Ostelin</a>
+                                    <a href="/#" class="suggest-item">Collagen</a>
+                                    <a href="/#" class="suggest-item">đồng hồ</a>
+                                    <a href="/#" class="suggest-item">Obagi</a>
+                                    <a href="/#" class="suggest-item">Obagi Retinol</a>
+                                    <a href="/#" class="suggest-item">fatzbaby</a>
+                                    <a href="/#" class="suggest-item">vitamin</a>
+                                    <a href="/#" class="suggest-item">máy massage cầm tay</a>
+                                    <a href="/#" class="suggest-item">Elevit Bầu</a>
                                 </div>
                             </div>
-                            <ul style="display: none;">
-                                <li id="search-suggestion-template"> <a href="" class="link-search"> <span class="thumb-search"> <img data-src="https://cdn.chiaki.vn/unsafe/0x100/left/top/smart/filters:quality(75)/https://chiaki.vn/upload/"> </span> <span class="title-search"></span> <span class="price-search"> <b class="price-value"></b> <sup>đ</sup> <span class="old-price-value"></span> </span> <span class="clearfix"></span> </a> <a href="#muangay" class="search-buy-now"> Mua ngay </a> </li>
-                                <li id="search-in-category-template"><a href="" class="search-in-category"></a></li>
-                            </ul>
+                            <div class="product-member">
+                                <h3 class="hotsearch-title">Sản phẩm bạn muốn tìm</h3>
+                                <div id="list-suggest-product" class="product-hot-keyword">
+                                    <?php for ($i=1; $i < 6; $i++) { ?>
+                                        <div class="product-suggest-item flex-b align-c">
+                                            <a class="product-suggest-link" href="#/">
+                                                <img src="/images/products/<?= $i?>.jpg" width="100" height="100" alt="">
+                                            </a>
+                                            <div class="product-suggest-info">
+                                                <a class="product-suggest-title" href="/#">
+                                                    Sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                                </a>
+                                                <div class="flashsale-price flex-b align-c">
+                                                    <span class="nPrice"> 2.290.000đ </span>
+                                                    <del class="oPrice"> 2.690.000đ </del>
+                                                </div>
+                                                <button type="button" class="button primary">Mua ngay</button>
+                                            </div>
+                                        </div>
+                                    <?php } ?>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </form>
-                <div class="segment-order-tracking bar-item">
+                <div class="segment-order-tracking bar-item desktop">
                     <div class="segment-order-text flex-b align-c">
                         <img height="28" src="/images/segment-icon.svg" alt="<?= $sitename ?>">
                         <span class="desktop">Tra cứu đơn hàng</span>
                     </div>
-                    <form id="form-search-order" class="bar-item" action="https://chiaki.vn/kiem-tra-don-hang" method="POST">
+                    <form id="form-search-order" class="bar-item"  method="POST">
                         <div class="form-group">
-                            <label for="phone">Số điện thoại</label> <input class="form-control input-sm" name="phone" id="phone-input" type="text" placeholder="Nhập số điện thoại">
-                            <div class="help-block with-errors" id="error-phone" style="color: red;"></div>
-                            <label for="phone">Mã khách hàng</label> <input class="form-control input-sm" name="customerCode" id="customer-code" type="text" placeholder="Nhập mã khách hàng">
-                            <div class="help-block with-errors" id="error-customer" style="color: red;"></div>
-                            <div class="help-block" style="color: green;"> Liên hệ CSKH nếu bạn chưa có mã khách hàng </div>
-                            <input type="hidden" name="_token" id="csrf-token" value="iDciIwzz9o1637077472712">
+                            <label for="phone">Số điện thoại</label>
+                            <input class="form-control input-sm" name="phone" id="phone-input" type="text" placeholder="Nhập số điện thoại">
                         </div>
+
+                        <div class="form-group">
+                            <label for="phone">Mã khách hàng</label>
+                            <input class="form-control input-sm" name="customerCode" id="customer-code" type="text" placeholder="Nhập mã khách hàng">
+                        </div>
+
+                        <div class="form-group">
+                            <div class="help-block" style="color: green;"> Liên hệ CSKH nếu bạn chưa có mã khách hàng </div>
+                        </div>
+
                         <div class="form-group flex-b align-c">
-                            <button type="submit" class="button btn-order-tracking"> Tra cứu </button>
+                            <button type="submit" class="button primary btn-order-tracking"> Tra cứu </button>
                             <button type="reset" id="hide-segment" class="button btn-cancel"> Đóng </button>
                         </div>
                     </form>
@@ -95,19 +120,136 @@
                         <a href="0933.555.300">0933.555.300</a>
                     </div>
                 </div>
-                <div class="cart-on-nav bar-item">
-                    <a href="/gio-hang?cart=1" title="Giỏ hàng của bạn">
-                        <div class="iconbox">
-                            <img src="/images/header-nav-cart.svg" alt="<?= $sitename ?>" width="24" height="24">
-                            <span class="badge cart-item-count"></span>
+                <div class="cart-on-nav mini-cart bar-item">
+                    <div class="iconbox mini-cart-link">
+                        <img src="/images/header-nav-cart.svg" alt="<?= $sitename ?>" width="24" height="24">
+                        <span class="badge cart-item-count">1</span>
+                    </div>
+                    <div class="mini-cart-contain">
+                        <div class="mini-cart-contain">
+                            <div class="cart-top mobile ">
+                                <div class="mini-cart-heading flex-b align-c">
+                                    Giỏ hàng của bạn <span class="item-count top-totalcartnum">3</span>
+                                </div>
+                                <span class="closecart">Đóng</span>
+                            </div>
+                            <?php if (1 == 1) { ?>
+                                <div id="list-cart-items" class="mini-cart-list">
+                                    <div class="mini-cart-content">
+                                        <?php for ($i=1; $i < 4; $i++) { ?>
+                                            <div class="list-item-box">
+                                                <div class="cart-box">
+                                                    <div class="cart-content-top flex-b flex-s">
+                                                        <div class="cart-tips-price">
+                                                            <img src="/images/products/<?= $i?>.jpg" width="60" height="60" alt="">
+                                                        </div>
+                                                        <div class="cart-tips-event flex-b column">
+                                                            <span class="cart-tips-date">18-11-21 23:15</span>
+                                                            <span class="cart-tips-team">Sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+                                                            <div class="cart-content-bottom flex-b align-c">
+                                                                <div class="flashsale-price flex-b align-c">
+                                                                    <span class="nPrice"> 2.290.000đ </span>
+                                                                    <del class="oPrice"> 2.690.000đ </del>
+                                                                </div>
+                                                                <span class="delete-current-item"> &times; </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        <?php } ?>
+                                    </div>
+
+                                </div>
+                            <?php } ?>
+                            <div class="mini-cart-footer">
+                                <a class="js-go-to-cart mini-cart-button checkout-btn flex-b align-c flex-c" href="/tips/cart">
+                                    Thanh toán
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
+                                    </svg>
+                                </a>
+                            </div>
+
+                            <?php if (1 == 2) { ?>
+                                <div id="cart-error" class="mini-cart-list">
+                                    <div class="flex-b flex-c align-c ">
+                                        <div class="">
+                                            <div class="flex-box flex-c align-c">
+                                                <img src="https://printerval.com/modules/cart/images/shopping-cart.svg" alt="" width="72">
+                                            </div>
+                                            Your Cart is Empty
+                                        </div>
+                                        <a href="https://printerval.com">
+                                            Continue Shopping
+                                        </a>
+                                    </div>
+                                </div>
+                            <?php } ?>
                         </div>
-                    </a>
+                    </div>
+                    <div class="mini-cart-background mobile"></div>
                 </div>
                 <div class="mobile user-area bar-item">
                     <img src="/images/user.svg" alt="<?= $sitename?>" width="24" height="24">
                 </div>
             </div>
         </div>
+        <div id="login-chiaki" class="mobile">
+            <div class="quick-login login-item">
+                <div class="cart-top flex-b align-c flex-s">
+                    <div class="mini-cart-heading flex-b align-c">
+                        Tài khoản
+                    </div>
+                    <span class="closecart">Đóng</span>
+                </div>
+                <div class="quick-login-content">
+                    <div class="social-buttons">
+                        <a rel="nofollow" href="/facebook-login" class="button button-fb">Facebook</a>
+                        <a rel="nofollow" href="/google-login" class="button button-google">Google</a>
+                    </div>
+                    <p>hoặc</p>
+                    <form class="form" role="login" method="post" action="/dang-nhap" accept-charset="UTF-8" id="login-nav" data-toggle="validator" novalidate="true">
+                        <div class="form-group">
+                            <label class="hidden" for="exampleInputEmail2">Email</label>
+                            <input name="email" type="email" class="form-control" id="inputEmail" placeholder="Email" required oninvalid="this.setCustomValidity('Email bạn nhập chưa đúng!')" oninput="setCustomValidity('')">
+                        </div>
+                        <div class="form-group">
+                            <label class="hidden" for="exampleInputPassword2">Password</label>
+                            <input type="password" name="password" class="form-control" id="inputPassword3" placeholder="Mật khẩu" data-minlength="6" oninvalid="this.setCustomValidity('Chưa nhập mật khẩu')" oninput="setCustomValidity('')" required="">
+                            <div class="help-block text-right">
+                                <a id="RecoverPass" class="linkcolor" href="javascript:void(0);">Quên mật khẩu?</a>
+                            </div>
+                        </div>
+                        <div class="form-group"> <button type="submit" class="button primary button-block">Đăng nhập</button> </div>
+                        <div class="bottom text-center"> Chưa có tài khoản? Đăng ký <a rel="nofollow" class="linkcolor" href="/dang-ky">Tại đây</a> </div>
+                    </form>
+                </div>
+            </div>
+            <div class="forget-pass login-item">
+                <div class="cart-top flex-b align-c flex-s">
+                    <div class="mini-cart-heading flex-b align-c">
+                        Tài khoản
+                    </div>
+                    <span class="closecart">Đóng</span>
+                </div>
+                <div class="quick-login-content">
+                    <p>Bạn hãy nhập email để chúng tôi gửi mật khẩu cho bạn</p>
+                    <form class="form" method="post" role="recoverpassword" action="/mat-khau">
+                        <div class="form-group">
+                            <label class="hidden" for="exampleInputEmail2">Email</label>
+                            <input type="email" name="email" class="form-control" id="forgotpass" placeholder="Nhập Email của bạn" required oninvalid="this.setCustomValidity('Email bạn nhập chưa đúng!')" oninput="setCustomValidity('')">
+                        </div>
+                        <div class="form-group flex-b align-c">
+                            <button type="submit" class="button primary">Gửi</button>
+                            <a rel="nofollow" href="javascript:void(0);" class="button button-sus quick-log">Đăng nhập</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
         <div class="navigation-background"></div>
+        <div class="login-background-mobile "></div>
     </div>
 </div>
