@@ -26,7 +26,7 @@
     --size: 15px;
     --bold: 600;
 
-    --left: 180px;
+    --left: 250px;
     --right: 260px;
 }
 
@@ -73,12 +73,12 @@ address {
 }
 
 ::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
+    width: 6px;
+    height: 6px;
 }
 
 ::-webkit-scrollbar-thumb {
-    width: 8px;
+    width: 6px;
     border-radius: 2px;
     background-color: #d1d1d1;
 }
@@ -156,7 +156,7 @@ img {
     border: none;
 }
 
-.button {
+.button{
     display: inline-block;
     vertical-align: middle;
     margin: 0;
@@ -173,13 +173,14 @@ img {
     cursor: pointer;
     outline: none;
 
-    background-color: var(--white);
-    color: var(--dark);
-    font-weight: 600;
+    background-color: var(--light);
+    color: var(--darkness);
+    font-weight: 500;
 }
 
 .button:hover {
     outline: none;
+    background-color: var(--flash)
 }
 
 .primary {
@@ -320,9 +321,7 @@ textarea {
         -webkit-transform: rotate(360deg);
     }
 }
-.breadcrumb-box {
-    background-color: var(--light)
-}
+
 .breadcrumb {
     margin: 0;
     list-style: none;
@@ -356,9 +355,9 @@ textarea {
 }
 
 .pagination-box {
-    border-top: 2px solid #eee;
-    margin: 25px auto 35px;
-    padding-top: 25px;
+    border-top: 1px solid #eee;
+    margin: var(--size) auto;
+    padding-top: var(--size);
 }
 
 .pagination {
@@ -373,23 +372,7 @@ textarea {
     width: 100%;
 }
 
-.pagination li {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    min-width: fit-content;
-    min-width: -moz-fit-content;
-    font-weight: 600;
-    margin: 0 6px
-}
-
-.pagination li a {
+.pagination a {
     background-color: transparent;
     display: block;
     width: fit-content;
@@ -397,6 +380,7 @@ textarea {
     height: 32px;
     width: 32px;
     display: flex;
+    margin: 0 4px;
     justify-content: center;
     align-items: center;
     border-radius: 3px;
@@ -404,7 +388,7 @@ textarea {
     white-space: nowrap;
     background-color: var(--light);
 }
-.pagination li span {
+.pagination span {
     background-color: transparent;
     display: block;
     width: fit-content;
@@ -421,18 +405,18 @@ textarea {
     color: #fff;
 }
 
-.pagination li a svg {
+.pagination a svg {
     min-width: 16px;
     height: 16px;
 }
 
-.pagination .disable a {
+.pagination adisable {
     background-color: var(--darkness);
     cursor: default;
     color: var(--white);
     pointer-events: none;
 }
-.pagination .current a {
+.pagination a.current {
     background-color: var(--primary);
     cursor: default;
     color: var(--white);

@@ -3,7 +3,7 @@
         <div class="menu-dummy"></div>
         <div class="banner-area flex-b align-s">
             <div class="main-banner">
-                <?php for ($i=1; $i < 4; $i++) { ?>
+                <?php for ($i=0; $i < 4; $i++) { ?>
                     <div class="main-banner-item">
                         <a href="#">
                             <img src="/images/banner/<?=$i?>.png" alt="">

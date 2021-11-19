@@ -46,33 +46,9 @@ $menuItems = [
                 </div>
                 <?php for ($e=0; $e < 3; $e++) { ?>
                     <div data-id="<?php if ($e == 0) {  echo 'bestsale';} elseif ($e == 1) { echo 'newest'; } else { echo 'bestprice'; } ?>" class="tab-products-list-box <?php if ($e == 0) { echo 'active'; } ?>">
-                        <?php for ($i=1; $i < 17; $i++) { ?>
-                            <div class="product-item">
-                                <a href="/san-pham?p<?= $i ?>" class="flashsale-image">
-                                    <img src="/images/products/<?= $i + $e?>.jpg" alt="">
-                                </a>
-                                <div class="product-info">
-                                    <a class="feature-brand" href="#/feature-brand">
-                                        feature brand
-                                    </a>
-                                    <h4 class="product-title">
-                                        <a class="product-title-link" href="/san-pham?p<?= $i ?>">LLorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</a>
-                                    </h4>
-                                    <div class="product-price">
-                                        <span class="nPrice"> <?= $i + 1?>.290.000đ </span>
-                                        <del class="oPrice"> <?= $i + 1 ?>.690.000đ </del>
-                                    </div>
-                                    <div class="rating-wrap flex-b align-c">
-                                        <div class="rating-star-in-list"></div>
-                                        <div class="rating-star-in-list"></div>
-                                        <div class="rating-star-in-list"></div>
-                                        <div class="rating-star-in-list"></div>
-                                        <div class="rating-star-in-list"></div>
-                                        <small class="rating-count">(<?= $i + 1?>)</small>
-                                    </div>
-                                </div>
-                            </div>
-                        <?php } ?>
+                        <?php for ($i=1; $i < 17; $i++) {
+                            include 'common/products/product-item.php';
+                        } ?>
                     </div>
                 <?php } ?>
             </div>

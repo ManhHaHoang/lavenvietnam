@@ -7,10 +7,15 @@ $(document).ready(function() {
 
     $(window).scroll(function() {
         var headerHeight = $('#header').height()
-        if ($(this).scrollTop() > headerHeight) {
-            $('.myDiv').addClass('navigation-fixed');
+        if ($('.banner-wrapper').length > 0) {
+            heightBanner = $('.banner-wrapper').height()
         } else {
-            $('.myDiv').removeClass('navigation-fixed');
+            heightBanner = 0
+        }
+        if ($(this).scrollTop() > (headerHeight + heightBanner)) {
+            $('#navigation').addClass('navigation-fixed');
+        } else {
+            $('#navigation').removeClass('navigation-fixed');
         }
     });
 
@@ -32,8 +37,10 @@ $(document).ready(function() {
     if ($(window).width() > 1024) {
         $('.navigation').hover(function () {
             $('.navigation-background').addClass('init-background');
+            $('.main-menu').show();
         }, function () {
             $('.navigation-background').removeClass('init-background')
+            $('.main-menu').hide();
         }, 300);
 
         $('.category-menu-item').hover(function () {
@@ -42,8 +49,8 @@ $(document).ready(function() {
             $(this).find('.lev3-menu-box').hide()
         }, 300);
 
-        $('.navigation').hover(function () {
-            $(this).find$('.lev4-menu-box').show()
+        $('.has-lev4-menu').hover(function () {
+            $(this).find('.lev4-menu-box').show()
         }, function () {
             $(this).find('.lev4-menu-box').hide()
         }, 300);
@@ -69,7 +76,7 @@ $(document).ready(function() {
 
     if (screen.width > 1100) {
         var heightMenu = $('.main-menu').height();
-        $('.banner-wrapper').css('height', heightMenu);
+        $('.banner-wrapper').css('min-height', heightMenu);
     }
 
 
@@ -135,7 +142,9 @@ $(document).ready(function() {
     $('.main-banner').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        infinite: false
+        infinite: false,
+        autoplay: true,
+        autoplaySpeed: 2000,
     });
 
     $('.flashsale-list').slick({
@@ -292,8 +301,19 @@ $(document).ready(function() {
     $('.tab-action-item').click( function () {
          let value = $(this).attr('data-name');
          $(this).addClass('active').siblings().removeClass('active');
-         // let targetAction = $(this).parents('.tab-products-list-wrapper').find('data-id=[' + target +']')
-         // let targetAction = $(this).parents('.tab-products-list-wrapper').find('.tab-products-list-box[data-id= ' + target + ' ]')
          $(this).parents('.tab-products-list-wrapper').find('.tab-products-list-box[data-id= ' + value + ' ]').addClass('active').siblings().removeClass('active');
+    })
+
+    $('.search-area').click( function () {
+         $('.main-seach-form').slideToggle();
+         $('.open-search, .close-search').toggle();
+    })
+
+
+    $('.news-add-to-cart').click( function () {
+        $('.cart-popup').addClass('active');
+        setTimeout(function () {
+            $('.cart-popup').removeClass('active');
+        }, 1000)
     })
 });

@@ -1,4 +1,7 @@
-
+.banner-wrapper img {
+    display: block;
+    margin: 0;
+}
 .banner-area,
 .main-banner,
 .main-banner-item {
@@ -544,6 +547,10 @@
     .is-home .search-area {
         display: none;
     }
+
+    .banner-area .slick-list {
+        padding-right: 0;
+    }
 }
 
 @media (min-width: 768px) {
@@ -596,6 +603,10 @@
         position: relative;
     }
 
+    .tab-action-item.active {
+        cursor: default;
+    }
+
     .tab-action-item.active::before {
         content: "";
         position: absolute;
@@ -632,17 +643,21 @@
 @media (min-width: 990px) {
     .menu-dummy {
         display: block;
-        width: 250px;
+        width: var(--left);
     }
 
-    .is-home .main-menu {
+    .main-menu {
+        /* display: block !important; */
+    }
+
+    #navigation.is-home:not(.navigation-fixed) .main-menu {
         display: block;
         position: absolute;
         padding-top: 15px;
         top: 100%;
         left: 0;
         min-height: 365px;
-        width: 250px;
+        width: var(--left);
 
     }
 
@@ -660,11 +675,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 250px
+        width: var(--left)
     }
 
     .flashsale-list {
-        width: calc(100% - 250px);
+        width: calc(100% - var(--left));
         padding-left: var(--size);
     }
 
@@ -698,7 +713,7 @@
     }
 
     .banner-area {
-        width: calc(100% - 250px);
+        width: calc(100% - var(--left));
         padding-left: 10px;
     }
 

@@ -7,6 +7,12 @@
                     <small></small>
                     <small></small>
                 </span>
+                <a href="/" class="short-text desktop">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                        <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                    </svg>
+                </a>
                 <a class="lev1-link desktop">
                     Danh mục <span>sản phẩm</span>
                     <img width="10" height="10" src="/images/down.svg" alt="<?= $sitename ?>">
@@ -14,20 +20,16 @@
                 <a class="home-link mobile" href="/" title="<?= $sitename ?>">
                     <img width="" height="44" src="/images/logo.png" alt="<?= $sitename ?>">
                 </a>
-                <a class="short-text desktop">
-                    <img height="20" src="/images/logo.png" alt="<?= $sitename ?>">
-                    <img width="10" height="10" src="/images/down.svg" alt="<?= $sitename ?>">
-                </a>
                 <div class="main-menu">
                     <?php include 'common/menu.php' ?>
                     <div class="navigation-background-mobile"></div>
                 </div>
             </nav>
             <div class="main-bar-other flex-b align-s flex-s">
-                <form class="main-seach-form flex-b align-c" action="/search/" method="post">
+                <form class="main-seach-form flex-b align-c" action="/danh-muc" method="get">
                     <div id="search-header">
                         <div class="box-shadow-search flex-b align-s">
-                            <input type="text" id="keyword" autocomplete="off" class="txt-search form-control" placeholder="Tìm kiếm hàng nghìn Sản phẩm, Thương hiệu ...">
+                            <input type="text" id="keyword" autocomplete="off" name="s" class="txt-search form-control" placeholder="Tìm kiếm hàng nghìn Sản phẩm, Thương hiệu ...">
                             <input type="button" id="searchButton" value="Tìm kiếm" class="btn-search button">
                             <span class="search-loading"></span>
                         </div>
@@ -123,11 +125,15 @@
                 <div class="mobile user-area bar-item">
                     <img src="/images/user.svg" alt="<?= $sitename?>" width="24" height="24">
                 </div>
-                <div class="mobile search-area bar-item">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <label for="keyword" class="mobile search-area bar-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="open-search" viewBox="0 0 16 16">
                         <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
                     </svg>
-                </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="close-search" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z"/>
+                        <path fill-rule="evenodd" d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z"/>
+                    </svg>
+                </label>
                 <div class="cart-on-nav mini-cart bar-item">
                     <div class="iconbox mini-cart-link">
                         <img src="/images/header-nav-cart.svg" alt="<?= $sitename ?>" width="24" height="24">
@@ -152,7 +158,6 @@
                                                             <img src="/images/products/<?= $i?>.jpg" width="60" height="60" alt="">
                                                         </div>
                                                         <div class="cart-tips-event flex-b column">
-                                                            <span class="cart-tips-date">18-11-21 23:15</span>
                                                             <span class="cart-tips-team">Sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
                                                             <div class="cart-content-bottom flex-b align-c">
                                                                 <div class="flashsale-price flex-b align-c">
@@ -254,7 +259,6 @@
                 </div>
             </div>
         </div>
-        <div class="navigation-background"></div>
         <div class="login-background-mobile "></div>
     </div>
 </div>

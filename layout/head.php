@@ -20,6 +20,8 @@ if ($_SERVER['REQUEST_URI'] == '/') {
     <link rel="stylesheet" href="/assets/css/layout.css?v=<?=$ver?>">
     <link rel="stylesheet" href="/assets/css/slide.css?v=<?=$ver?>">
     <link rel="stylesheet" href="/assets/css/hgmh.css">
+    <script type="text/javascript" src="/assets/js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="/assets/js/slider.js?v=<?=$ver?>"></script>
 </head>
 <body class="<?= $homeclass ?>">
     <?php include 'layout/header.php' ?>
