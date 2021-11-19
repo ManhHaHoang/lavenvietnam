@@ -365,6 +365,10 @@
         padding: 0;
     }
 
+    .main-bar-other {
+        justify-content: flex-end;
+    }
+
     .list-home-categories {
         width: 100%;
         overflow-x: auto;
@@ -535,6 +539,10 @@
 
     .faq-block {
         margin-top: 1rem
+    }
+
+    .is-home .search-area {
+        display: none;
     }
 }
 

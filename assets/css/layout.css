@@ -839,11 +839,6 @@ span.lev4-menu-link {
     }
 
     .main-menu {
-        position: relative;
-        display: block;
-    }
-
-    .main-menu-list {
         display: block;
         position: fixed;
         top: 0;
@@ -857,33 +852,10 @@ span.lev4-menu-link {
         transform: translate(-320px, 0);
     }
 
-    .navigation-background {
-        display: none
-    }
-
-
-    .navigation-background-mobile::before,
-    .navigation-background-mobile::after {
-        content: "";
-        width: 30px;
-        height: 2px;
-        border-radius: 3px;
-        background-color: var(--white);
-        display: block;
-        position: absolute;
-        top: 45px;
-        left: 300px;
-        transform: rotate(45deg);
-    }
-
-    .navigation-background-mobile::after {
-        transform: rotate(-45deg);
-    }
-
-    .open-menu .main-menu-list {
+    .open-menu .main-menu {
         transform: translate(0, 0);
     }
-    .open-menu .navigation-background-mobile {
+    .open-menu .navigation-background {
         opacity: 1;
         pointer-events: all;
     }
@@ -895,8 +867,7 @@ span.lev4-menu-link {
         position: static;
     }
 
-    .open-lev3-menu .gotohome,
-    .open-lev3-menu .has-lev3-menu:not(.lev3-menu-active) {
+    .open-lev3-menu .gotohome {
         display: none;
     }
 
@@ -965,12 +936,16 @@ span.lev4-menu-link {
 
     .category-menu-item,
     .lev3-menu-item {
-        transition: var(--trans);
+
         position: static;
         border-top: 1px solid #e8e8e8;
     }
 
-    .open-lev3-menu .category-menu-item {
+    .main-menu-list {
+        transition: var(--trans);
+    }
+
+    .open-lev3-menu .main-menu-list {
         transform: translateX(-290px);
     }
 
@@ -1051,9 +1026,8 @@ span.lev4-menu-link {
 
     .main-seach-form {
         position: absolute;
-        width: 100%;
         top: 100%;
-        left: 0;
+        left: -6px;
         padding: 6px;
         background-color: var(--white);
         box-shadow: 0 3px 6px var(--shadow);
