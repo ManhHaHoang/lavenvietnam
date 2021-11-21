@@ -31,7 +31,7 @@
                         <div class="box-shadow-search flex-b align-s">
                             <input type="text" id="keyword" autocomplete="off" name="s" class="txt-search form-control" placeholder="Tìm kiếm hàng nghìn Sản phẩm, Thương hiệu ...">
                             <input type="button" id="searchButton" value="Tìm kiếm" class="btn-search button">
-                            <span class="search-loading"></span>
+                            <span class="loading-icon"></span>
                         </div>
                         <div class="hot-words-list">
                             <a class="hot-words-item" target="_blank" href="/#vitamin-cho-be-c114">Vitamin cho bé</a>

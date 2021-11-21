@@ -120,8 +120,6 @@
     position: absolute;
     top: 50%;
     display: block;
-    width: 20px;
-    height: 20px;
     padding: 0;
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
@@ -147,6 +145,11 @@
     align-items: center;
     color: #333;
 	background-color: #fff;
+}
+
+.slick-arrow svg {
+    width: 24px;
+    height: 24px;
 }
 
 .slick-disabled {

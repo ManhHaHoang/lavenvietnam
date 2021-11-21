@@ -52,4 +52,3 @@
         Thiết bị y tế Laven Việt Nam cung cấp các sản phẩm thiết bị y tế gia đình như máy đo huyết áp, máy đo đường huyết, cân sức khỏe, nhiệt kế chính hãng, Chất lượng Châu Âu
     </article>
 </div>
-<script type="text/javascript" src="/assets/js/category.js"></script>

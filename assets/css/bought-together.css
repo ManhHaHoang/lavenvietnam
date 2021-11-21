@@ -1,0 +1,626 @@
+.bought-together-area {
+    margin-bottom: 1.5rem;
+}
+
+.make-change-item-product {
+    overflow: hidden;
+}
+.md-bought-together-wrapper {
+    background-color: var(--white);
+    border-radius: 5px;
+    padding: var(--middle-padding) var(--middle-padding) var(--small-padding) var(--middle-padding);
+    width: 100%;
+}
+
+
+.bought-together-item {
+    width: 100%;
+    position: relative;
+}
+
+.bought-together-item .product-price {
+    flex-direction: column;
+    display: flex;
+}
+
+.bought-together-item .product-image {
+    max-height: 210px;
+}
+
+.bought-together-item .feature-brand {
+    display: none;
+}
+.bought-together-item .input-type-checkbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.bought-together-plus {
+    padding: 0 0.5rem;
+    min-width: 40px;
+    width: 40px;
+    padding-top: 70px;
+    display: none;
+}
+
+.bought-together-other-product {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+.bought-together-title a {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;;
+    font-size: 14px;
+    line-height: 1.15;
+    margin-bottom: 0.5rem;
+}
+
+.bought-together-variant {
+    font-size: 14px;
+    font-weight: 400
+}
+
+.bought-together-variant input {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.bought-together-variant input:checked:disabled ~ span {
+    opacity: 0.6;
+    filter: grayscale(1);
+}
+
+.bought-together-variant span {
+    width: 20px;
+    height: 20px;
+    display: block;
+    border: 1px solid var(--flash);
+    border-radius: 3px;
+    user-select: none;
+    margin-top: 4px;
+}
+
+.bought-together-variant {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 4px;
+}
+
+.bought-together-change {
+    font-size: 13px;
+    color: #019ADC;
+    cursor: pointer;
+    padding: 4px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+.bought-together-change svg {
+    margin-right: 3px;
+}
+
+.bought-together-variant span::after {
+    content: "";
+    transform: rotate(-45deg);
+    border-radius: 2px;
+    width: 14px;
+    height: 7px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent transparent #fff #fff;
+    position: absolute;
+    top: 4px;
+    left: 3px;
+}
+
+.bought-together-variant input:checked ~ span {
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+}
+
+.bought-together-variant span + div {
+    width: calc(100% -  20px);
+    padding-left: 0.5rem;
+    text-align: left;
+    cursor: pointer;
+    user-select: none;
+    text-transform: capitalize;
+    margin-top: 3px;
+}
+
+.bought-together-hightprice {
+    color: var(--dark);
+    font-size: 16px;
+    text-decoration: line-through;
+    align-items: center;
+    margin-left: 0.5rem;
+    font-weight: 400;
+}
+
+.bought-together-saleprice {
+    font-size: ;
+    font-weight: 600;
+    color: #C52C29;
+}
+
+.bought-together-other-product .bought-together-other-product {
+    width: 32%;
+}
+
+.bought-together-price {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 6px;
+}
+
+.md-bought-together-footer {
+    font-weight: 500;
+    border-top: 1px solid #e1e1e1;
+    margin-top: 0.8rem;
+    padding-top: 0.8rem;
+}
+
+.md-bought-together-footer .bought-together-price {
+    justify-content: flex-end;
+}
+
+.footer-text {
+    margin-right: 0.4rem;
+}
+
+.md-bought-together-footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.bought-together-button {
+    margin-left: 15px;
+}
+.bought-together-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    margin: 0;
+    padding:  20px;
+    border: none;
+    border-radius: 32px;
+    transition: background-color 0.25s ease-out, color 0.25s ease-out;
+    line-height: 1;
+    cursor: pointer;
+    user-select: none;
+    outline: none;
+    background-color: #ff5965;
+    color: #fff;
+    font-weight: 500;
+    font-family: 1.2rem;
+}
+
+.bought-together-btn:hover,
+.bought-together-btn:focus {
+    background-color: #cc2d38;
+    color: #fff;;
+}
+
+.bought-together-picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.bought-together-info {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.make-change-item-content {
+    padding: ;
+    background-color: #fff;
+    box-shadow: 0 3px 4px -1px rgb(0 0 0 / 20%), 0 5px 10px 0px rgb(0 0 0 / 16%), 0 1px 12px 0px rgb(0 0 0 / 12%);
+    z-index: 123;
+    border-radius: 5px;
+    font-size: ;
+    cursor: default;
+    user-select: none;
+}
+
+.make-change-item-row {
+    margin-bottom: ;
+    color: var(--black)
+}
+
+.make-change-item-row:last-child {
+    margin: 0
+}
+
+.make-change-item-content input {
+    position: absolute;
+    opacity: 0;
+}
+
+.make-change-item-variant {
+    cursor: pointer;
+}
+
+.make-change-item-content span {
+    border-radius:32px;
+    color: var(--primary);
+    background-color: var(--white);
+    border: 2px solid var(--flash);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 6px;
+}
+
+.type-gender span {
+    padding: 0.6rem 0.8rem;
+}
+.type-color span {
+    padding: 3px;
+}
+.make-change-item-wrapper .select {
+    border-radius: 24px;
+    padding: 0.8rem ;
+    border-width: 2px;
+}
+
+.make-change-item-content span img {
+    border-radius: 48px;
+    width: 36px;
+    height: 36px;
+    object-fit: cover;
+    display: block;
+}
+
+.make-change-item-content span:nth-child(n + 2) {
+    margin-right: 0.3rem
+}
+.make-change-item-variant-content {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.type-gender input:checked ~ span {
+    background-color: var(--primary);
+    color: var(--white);
+    border-color: var(--primary);
+}
+.type-color input:checked ~ span {
+    background-color: var(--white);
+    color: var(--white);
+    border-color: var(--secondary-dk);
+}
+
+.make-change-item-row .button {
+    padding: 12px 20px;
+    border-radius: 32px;
+    text-align: center;
+}
+
+.make-change-button {
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    z-index: 2;
+}
+
+.make-change-comfirm {
+    color: #fff;
+    background-color: #007bff;
+}
+
+.make-change-comfirm:hover {
+    color: #fff;
+    background-color: #0069d9
+}
+
+.make-change-item-wrapper {
+    transition: all 200ms ease-in-out;
+}
+
+@media (max-width: 780px) {
+    .bought-together-picture {
+        display: block;
+        overflow: hidden;
+        border-radius: 5px;
+        width: 120px;
+    }
+
+    .bought-together-info {
+        width: calc(100% - 120px);
+        padding-left: 0.5rem
+    }
+
+    .bought-together-item {
+        display: flex;
+        justify-content: flex-start;
+        align-items: stretch;
+        padding-left: 24px;
+    }
+
+    .bought-together-other-product .bought-together-item {
+        padding: 0;
+        margin: var(--size) var(--size);
+    }
+
+    .bought-together-title a {
+        -webkit-line-clamp: 2;
+        margin-bottom: 4px;
+    }
+
+    .bought-together-other-product,
+    .bought-together-other-product .bought-together-item:nth-child(n + 2) {
+        margin-top:
+    }
+
+    .checkbox-type {
+        position: absolute;
+        left: -8px;
+    }
+
+    .bought-together-variant span + div {
+        pointer-events: none;
+        padding-left: 0;
+        width: 100%;
+    }
+
+    .bought-together-price {
+        margin-top: auto;
+    }
+
+    .bought-together-change::before {
+        content: "";
+        height: 50px;
+        width: 100%;
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: transparent;
+        z-index: 1;
+    }
+
+    .make-change-item-wrapper {
+        position: fixed;
+        z-index: 99;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 0;
+        transform: translateY(110%);
+        pointer-events: none;
+        opacity: 0;
+    }
+
+    .bought-together-change.active-change-item .make-change-item-wrapper {
+        transform: translateY(0);
+        pointer-events: all;
+        opacity: 1;
+    }
+
+    .make-change-item-variant-content {
+        flex-wrap: nowrap;
+        width: 100%;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+
+    .make-change-item-content span {
+        min-width: 46px;
+        white-space: nowrap;
+    }
+
+    .bought-together-picture picture {
+        background-color: #f8f8f8;
+    }
+
+    .make-change-item-row {
+        margin-bottom: 0.5rem;
+    }
+
+    .make-change-cancel-background {
+        content: "";
+        width: 100%;
+        height: 100%;
+        display: block;
+        background: rgba(11, 11, 11, 0.3);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        opacity: 0;
+        transition: all 300ms ease-in-out;
+        pointer-events: none;
+    }
+    .make-change-item-product .make-change-cancel-background {
+        opacity: 1;
+        transition: all 300ms ease-in-out;
+        pointer-events: all;
+    }
+
+    .md-bought-together-footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0.5rem;
+    }
+
+    .bought-together-list-item {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+}
+
+
+@media (min-width: 780px) {
+    .bought-together-list-item {
+        width: 100%;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+
+    .bought-together-item {
+        width: 146px;
+        min-width: 146px;
+        position: relative;
+    }
+
+    .bought-together-picture {
+        height: 146px
+    }
+
+    .bought-together-info {
+        height: calc(100% - 146px - );
+    }
+
+    .bought-together-plus {
+        display: block;
+        padding-top: 73px
+    }
+
+    .bought-together-other-product {
+        width: calc(100% - 40px - 146px);
+        flex-wrap: nowrap;
+    }
+
+    .bought-together-other-product .bought-together-item:nth-child(n + 2) {
+        margin-left: 0.5rem;
+        margin-top: 0;
+    }
+
+    .bought-together-variant span {
+        position: relative;
+    }
+
+    .bought-together-info {
+        margin-top: 0.8rem;
+    }
+
+    .bought-together-change {
+        margin-top: auto;
+    }
+
+    .bought-together-variant span + div {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+}
+
+@media (min-width: 990px) {
+    .make-change-item-wrapper {
+        padding: 6px;
+        position: absolute;
+        top: 100%;
+        width: 320px;
+        left: calc(50% - 140px);
+        z-index: 123;
+        transform: translateY(-20px);
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .bought-together-change.active-change-item .make-change-item-wrapper {
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    .make-change-item-content:after {
+    	top: -6px;
+    	left: 50%;
+    	border: solid transparent;
+    	content: "";
+    	height: 0;
+    	width: 0;
+    	position: absolute;
+    	pointer-events: none;
+    	border-color: rgba(255, 255, 255, 0);
+    	border-bottom-color: rgba(200, 200, 200, 0.4);
+    	border-width: 6px;
+    	margin-left: -6px;
+    }
+}
+@media (min-width: 1024px) {
+    .bought-together-item {
+        width: 170px
+    }
+    .bought-together-other-product {
+        width: calc(100% - 40px - 170px);
+        flex-wrap: nowrap;
+    }
+
+    .bought-together-plus {
+        padding-top: 85px
+    }
+
+    .bought-together-picture {
+        height: 170px
+    }
+
+    .bought-together-info {
+        height: calc(100% - 170px - );
+    }
+
+    .bought-together-saleprice {
+        font-size: 1.;
+    }
+}
+
+@media (min-width: 1500px) {
+    .make-change-item-wrapper {
+        width: 420px;
+        left: calc(50% - 210px);
+    }
+}
+@media (min-width: 1200px) {
+    .bought-together-item {
+        width: 240px
+    }
+    .bought-together-other-product {
+        width: calc(100% - 40px - 240px);
+        flex-wrap: nowrap;
+    }
+
+    .bought-together-plus {
+        padding-top: 110px
+    }
+
+    .bought-together-picture {
+        height: 300px
+    }
+
+    .bought-together-info {
+        height: auto;
+    }
+
+    .bought-together-saleprice {
+        font-size: 1.;
+    }
+
+    .bought-together-list-item {
+        overflow: visible visible;
+    }
+}

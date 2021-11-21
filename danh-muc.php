@@ -28,4 +28,5 @@
         </div>
     </section>
 </main>
+<script type="text/javascript" src="/assets/js/category.js"></script>
 <?php include 'layout/footer.php';?>

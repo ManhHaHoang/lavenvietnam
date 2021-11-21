@@ -148,7 +148,7 @@
 }
 
 .category-content-wrapper {
-    margin-top: 1rem;
+    margin-top: ;
 }
 
 
@@ -346,7 +346,7 @@
     background-color: var(--white);
     padding: 0.8rem 1.2rem;
     border-radius: 4px;
-    margin-top: 1rem;
+    margin-top: ;
 }
 
 .rangeslider {
@@ -583,7 +583,7 @@
     }
     .category-content {
         width: calc(100% - var(--left));
-        padding-left: 1rem;
+        padding-left: ;
     }
 }
 @media (min-width: 1100px) {
@@ -621,7 +621,7 @@
     }
 
     .sidebar-component {
-        padding: 1rem;
+        padding: ;
     }
 
     .filter-title {
@@ -703,11 +703,11 @@
 
     .category-top-nav,
     .filter-result-wrapper {
-        padding: 0 1rem;
+        padding: 0 ;
         margin-bottom: 0;
     }
     .category-description {
-        padding: 1rem
+        padding: 
     }
 
 

@@ -104,9 +104,9 @@ $(document).ready(function() {
     });
 
     $('#keyword').bind('keyup change',function(){
-        $('.search-loading').show();
+        $('.loading-icon').show();
         setTimeout(function () {
-            $('.search-loading').hide();
+            $('.loading-icon').hide();
         }, 1000)
 
         if(this.value.length > 3){
@@ -310,7 +310,7 @@ $(document).ready(function() {
     })
 
 
-    $('.news-add-to-cart').click( function () {
+    $('.js-news-add-to-cart').click( function () {
         $('.cart-popup').addClass('active');
         setTimeout(function () {
             $('.cart-popup').removeClass('active');

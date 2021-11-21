@@ -132,7 +132,7 @@
 }
 
 .tab-products-list-wrapper {
-    margin: 1.5rem 0 1rem;
+    margin: 1.5rem 0 ;
 }
 
 .tab-products-list-box:not(.slick-slide) {
@@ -318,7 +318,7 @@
     .tab-products-list-header {
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 1rem;
+        margin-bottom: ;
         flex-wrap: wrap;
     }
 
@@ -541,7 +541,7 @@
     }
 
     .faq-block {
-        margin-top: 1rem
+        margin-top: 
     }
 
     .is-home .search-area {
@@ -635,7 +635,7 @@
         padding: 1px;
         font-weight: 600;
         margin-bottom: 7px;
-        margin-top: 1rem
+        margin-top: 
     }
 
 }
