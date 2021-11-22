@@ -145,6 +145,7 @@
     align-items: center;
     color: #333;
 	background-color: #fff;
+    z-index: 1;
 }
 
 .slick-arrow svg {
@@ -215,9 +216,15 @@
     margin: 0;
 }
 .slick-dots .slick-active button  {
-    border-color: #970017;
-    background-color: #970017;
+    border-color: #339e39;
+    background-color: #339e39;
 	color: #fff;
+}
+
+.slick-dots li:hover button {
+    border-color: #198838;
+    background-color: #198838;
+    color: #fff;
 }
 
 @media (max-width: 760px) {
