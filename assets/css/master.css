@@ -111,6 +111,8 @@ figure {
 
 .form-control:focus {
     outline: 0;
+    border-color: rgba(89, 189, 104, 0.8);
+    box-shadow: 0 0 0 3px rgba(89, 189, 104, 0.2);
 }
 
 .form-control::-webkit-input-placeholder {
@@ -262,21 +264,20 @@ select {
     -webkit-appearance: none;
     -moz-appearance: none;
     background-image: linear-gradient(45deg, transparent 50%, gray 50%), linear-gradient(135deg, gray 50%, transparent 50%);
-    background-position: calc(100% - 21px) , calc(100% - ) , calc(100% - );
-    background-size: 5px 5px, 5px 5px, 1px calc(100% - );
+    background-position: calc(100% - 20px) , calc(100% - var(--size)) , calc(100% - var(--size));
+    background-size: 5px 5px, 5px 5px, 1px calc(100% - var(--size));
     background-repeat: no-repeat;
 }
 
 select:focus {
     background-image: linear-gradient(45deg, green 50%, transparent 50%), linear-gradient(135deg, transparent 50%, green 50%);
-    background-position: calc(100% - ) 1em, calc(100% - 21px) 1em;
+    background-position: calc(100% - var(--size)) 1em, calc(100% - 20px) 1em;
     background-size: 5px 5px, 5px 5px, 1px 1.5em;
     background-repeat: no-repeat;
     outline: 0;
-    border-color: #e88f97;
+    border-color: rgba(89, 189, 104, 0.8);
     outline: 0;
-    -webkit-box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
-    box-shadow: 0 0 0 3px #e88f97;
+    box-shadow: 0 0 0 3px rgba(89, 189, 104, 0.4);
 }
 
 select {
