@@ -1,5 +1,5 @@
 <div class="product-item">
-    <a href="/san-pham?p<?= mt_rand(1, 20) ?>" class="product-image">
+    <a href="/san-pham.php" class="product-image">
         <img src="/images/products/<?= mt_rand(1, 20) ?>.jpg" alt="" loading="lazy">
     </a>
     <div class="product-info">
@@ -7,7 +7,7 @@
             feature brand
         </a>
         <h4 class="product-title">
-            <a class="product-title-link" href="/san-pham?p<?= mt_rand(1, 20) ?>">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockup</a>
+            <a class="product-title-link" href="/san-pham.php">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockup</a>
         </h4>
         <div class="product-action flex-b align-s flex-s">
             <div class="product-detail">

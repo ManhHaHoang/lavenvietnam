@@ -1,6 +1,6 @@
 <?php
 $menuItems = [
-    ["#/san-pham/san-pham-ban-chay", "Sản phẩm bán chạy"],
+    ["#/san-pham.php", "Sản phẩm bán chạy"],
     ["#/thuc-pham-chuc-nang-c56", "Thực phẩm chức năng"],
     ["#/do-the-thao-du-lich-c254", "Đồ thể thao du lịch"],
     ["#/thiet-bi-cham-soc-suc-khoe-c316", "Thiết bị chăm sóc sức khỏe"],

@@ -50,7 +50,7 @@
 
 
 
-                <form id="myForm" method="get" action="/san-pham">
+                <form id="myForm" method="get" action="/san-pham.php">
                     <div class="variant-pro">
                         <span class="select-title pr-meta-label"> Chọn bảo hành: </span>
                         <div class="filter-wrapper flex-b align-c">

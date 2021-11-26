@@ -19,12 +19,12 @@
             <div class="flashsale-list">
                 <?php for ($i=1; $i < 21; $i++) { ?>
                     <div class="flashsale-item">
-                        <a href="/san-pham?p<?= $i ?>" class="flashsale-image">
+                        <a href="/san-pham.php" class="flashsale-image">
                             <img src="/images/products/<?= $i?>.jpg" alt="">
                         </a>
                         <div class="flashsale-info">
                             <h4 class="flashsale-title">
-                                <a class="flashsale-title-link" href="/san-pham?p<?= $i ?>">LLorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</a>
+                                <a class="flashsale-title-link" href="/san-pham.php">LLorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</a>
                             </h4>
                             <div class="flashsale-price">
                                 <span class="nPrice"> <?= $i + 1?>.290.000đ </span>

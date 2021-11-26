@@ -23,7 +23,7 @@
         <div class="site-w flex-b align-c flex-s">
             <div class="logo">
                 <a class="logo-site flex-b align-c flex-c" href="/">
-                    <img src="/images/logo.png" height="45" alt="<?= $sitename ?>">
+                    <img src="/images/nanasieuthi-logo.png" height="45" alt="<?= $sitename ?>">
                 </a>
             </div>
             <div class="header-list-icon flex-b align-c flex-s">

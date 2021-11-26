@@ -1,5 +1,5 @@
 <div class="category-warp mobile">
-    <a class="category-group" href="https://chiaki.vn/san-pham/san-pham-ban-chay" title="">
+    <a class="category-group" href="https://chiaki.vn/san-pham.php" title="">
         <h2> Danh mục </h2>
     </a>
     <div class="list-home-categories">
