@@ -1,21 +1,80 @@
 .site-main {
     background-color: #eff0f5;
-    padding: calc(var(--size) * 2)
+    padding: calc(1rem * 2)
 }
 
-.card {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    min-width: 0;
-    word-wrap: break-word;
-    background-color: #fff;
-    background-clip: border-box;
-    border: 0 solid transparent;
-    border-radius: .25rem;
-    margin-bottom: 1.5rem;
-    box-shadow: 0 2px 6px 0 rgb(218 218 253 / 65%), 0 2px 6px 0 rgb(206 206 238 / 54%);
+.account-body {
+    background-color: var(--white);
+    padding: 1rem;
 }
-.me-2 {
-    margin-right: .5rem!important;
+
+.account-avatar {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 1rem;
+    padding: 4px;
+    border-radius: 100px;
+    background-color: var(--primary);
+}
+
+.account-sidebar .account-body {
+    text-align: center;
+}
+
+.account-row {
+    margin-bottom: 1.5rem;
+}
+
+.account-content-heading {
+    font-size: calc(17px + (18 - 17) * ((100vw - 300px) / (1920 - 300)));
+    margin: 0;
+    font-weight: normal;
+    width: 150px;
+}
+
+.account-body hr {
+    height: 1px;
+    width: 100%;
+    display: block;
+    border: none;
+    background-color: #e1e1e1;
+    margin-bottom: 1rem;
+}
+
+.account-content-txt {
+    padding: 10px 0;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.account-list-action {
+    background-color: var(--white);
+    padding: 1rem;
+    text-align: left;
+    margin: 1rem 0;
+}
+
+.action-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+}
+
+.action-item svg {
+    margin-right: 10px;
+    min-width: 20px;
+    height: 20px;
+    width: 20px;
+}
+
+
+@media (min-width: 990px) {
+    .account-sidebar {
+        width: var(--left);
+    }
+
+    .account-content {
+        width: calc(100% - var(--left));
+        padding-left: 1rem;
+    }
+
 }

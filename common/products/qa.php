@@ -34,24 +34,6 @@
         </div>
         <qa-list>
             <qa-item class="flex-b align-s">
-                <div class="vote-box">
-                    <div class="upvote-box flex-b align-c flex-c column" rel="87833">
-                        <span class="upvote">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
-                                <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
-                            </svg>
-                        </span>
-                        <span class="count">
-                            <count>7</count>
-                            <small>Votes</small>
-                        </span>
-                        <span class="downvote">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
-                                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
-                            </svg>
-                        </span>
-                    </div>
-                </div>
                 <div class="qa-list">
                     <div class="question-detail flex-b align-s">
                         <div class="qa-ava"> Hỏi: </div>
@@ -70,9 +52,28 @@
                                 </answer>
                             </list-answer>
                             <div class="showthread">
-                                <button class="button">
+                                <button class="button js-qa-button">
                                     Thảo luận
                                 </button>
+                                <form class="qa-module-form-reply">
+                                    <div class="form-grid-layout">
+                                        <div class="module-review-form-group">
+                                            <label class="module-review-form-label">Email của quý khách<i>*</i></label>
+                                            <input class="form-control review-reply review-reply-email" autocomplete="off" type="email" placeholder="Email" value="">
+                                        </div>
+                                        <div class="module-review-form-group">
+                                            <label class="module-review-form-label">Họ và tên của quý khách<i>*</i></label>
+                                            <input class="form-control review-reply review-reply-fullname" autocomplete="off" type="text" placeholder="Name" value="">
+                                        </div>
+                                    </div>
+                                    <div class="module-review-form-group">
+                                        <label class="module-review-form-label">Nội dung<i>*</i></label>
+                                        <textarea class="form-control review-reply review-reply-content" rows="3" style="margin-bottom: 5px" placeholder="Content"></textarea>
+                                    </div>
+                                    <button class="button primary">
+                                        Trả lời
+                                    </button>
+                                </form>
                             </div>
                         </div>
                     </div>

@@ -73,11 +73,21 @@ $(document).ready(function() {
     $(document).on('click', '.js-customer-button, .action-cancel', function () {
         $('#moduleReviewForm').slideToggle();
         $(this).toggleClass('comment-active')
-        // if ('.js-customer-button').hasClass('comment-active') {
-        //     $(this).text('Hủy').addClass('js-close-form');
-        // } else {
-        //     $(this).text('Đánh giá và nhận xét').removeClass('js-close-form');
-        // }
+        if ($('.js-customer-button').hasClass('comment-active')) {
+            $(this).text('Hủy').addClass('js-close-form');
+        } else {
+            $(this).text('Đánh giá và nhận xét').removeClass('js-close-form');
+        }
+    })
+
+    $(document).on('click', '.js-qa-button', function () {
+        $(this).toggleClass('qa-active')
+        $(this).next().slideToggle();
+        if ($(this).hasClass('qa-active')) {
+            $(this).text('Hủy');
+        } else {
+            $(this).text('Thảo luận');
+        }
     })
 
     $(document).on('click', '.js-reply-comment', function () {

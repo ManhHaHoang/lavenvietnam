@@ -19,8 +19,8 @@
 .form-grid-layout {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: ;
-    margin-bottom: ;
+    grid-gap: 15px;
+    margin-bottom: 15px;
 }
 
 .module-review-label {
@@ -36,7 +36,7 @@
 }
 
 .module-review-error-mess {
-    color: var(--error)
+    color: #f00;
 }
 
 .module-review-form-label i {
@@ -159,24 +159,6 @@
     background-color: var(--dark);
 }
 
-.module-review-action-wrapper {
-    margin:  0;
-    background-color: var(--light);
-    padding: ;
-    border-radius: 4px;
-}
-
-#selectImagesButton {
-    border-radius: 2rem
-}
-
-.module-review-file-selector {
-    border-radius: 2rem;
-    border: 1px solid var(--flash);
-    padding: 0;
-    cursor: pointer;
-    background-color: var(--white);
-}
 
 .select-images-note {
     padding: 0 2rem 0 ;
@@ -450,6 +432,16 @@ qa-list {
     top: auto;
     right: auto;
     background-color: transparent
+}
+
+.js-qa-button {
+    min-width: 110px;
+    text-align: center;
+}
+
+.qa-module-form-reply {
+    display: none;
+    padding: 15px 0;
 }
 
 @media (min-width: 780px) {
